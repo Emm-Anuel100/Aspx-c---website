@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="StyleSheet.css" />
+</head>
+<body> 
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+         <asp:Menu ID="Menu1" runat="server" Font-Bold="True" Font-Names="Georgia" Font-Size="14px" Orientation="Horizontal" BackColor="#363636" CssClass="static" ForeColor="White" Width="100%" u">
+            <Items>
+                <asp:MenuItem Text="HOME" Value="HOME"></asp:MenuItem>
+                <asp:MenuItem Text="ABOUT" Value="ABOUT" NavigateUrl="~/Default2.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="CONTACT" Value="CONTACT" NavigateUrl="~/Default3.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="NEWS" Value="NEWS" NavigateUrl="~/Default4.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="FAQ" Value="FAQ" NavigateUrl="~/Default5.aspx"></asp:MenuItem>
+            </Items>
+            <StaticHoverStyle BorderStyle="Solid" BorderWidth="0" BackColor="Orange" CssClass="hover-nav" ForeColor="Black" />
+            <StaticMenuItemStyle Font-Names="Calibri Light" HorizontalPadding="12px" ItemSpacing="50px" VerticalPadding="14px" />
+            <StaticMenuStyle BorderStyle="None" HorizontalPadding="10px" VerticalPadding="4px" Width="100%" />
+            <StaticSelectedStyle HorizontalPadding="30px" ItemSpacing="10px" VerticalPadding="20px" />
+        </asp:Menu>
+        <p>
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
+    </form>
+</body>
+</html>
